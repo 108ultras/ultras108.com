@@ -1,0 +1,8 @@
+collections:
+  chants:
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

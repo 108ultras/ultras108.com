@@ -1,0 +1,18 @@
+---
+layout: default
+title: Chants
+permalink: /chants
+---
+
+<h1>Chants</h1>
+
+<ul>
+    {% for chant in site.chants %}
+        <li>
+            <h2>{{ chant.title }}</h2>
+            <p>
+                {{ chant.content | markdownify }}
+            </p>
+        </li>
+    {% endfor %}
+</ul>
