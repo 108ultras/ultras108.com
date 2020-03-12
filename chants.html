@@ -7,12 +7,9 @@ permalink: /chants
 <h1>Chants</h1>
 
 <ul>
-    {% for chant in site.chants %}
+    {% for chant in site.data.chants %}
         <li>
-            <h2>{{ chant.title }}</h2>
-            <p>
-                {{ chant.content | markdownify }}
-            </p>
+            <h2><a href="{{ chant.link }}">{{ chant.title }}</a></h2>
         </li>
     {% endfor %}
 </ul>

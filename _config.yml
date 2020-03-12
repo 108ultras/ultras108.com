@@ -6,3 +6,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: "/chants/*"
+    values:
+      layout: "chant"
