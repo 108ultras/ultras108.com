@@ -4,12 +4,13 @@ title: Chants
 permalink: /chants
 ---
 
-<h1>Chants</h1>
-
-<ul>
-    {% for chant in site.data.chants %}
-        <li>
-            <h2><a href="{{ chant.link }}">{{ chant.title }}</a></h2>
-        </li>
-    {% endfor %}
-</ul>
+<div class="container">
+    <h1>Chants</h1>
+    <ul>
+        {% for chant in site.data.chants %}
+            <li>
+                <h2><a href="{{ chant.link }}">{{ chant.title }}</a></h2>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
